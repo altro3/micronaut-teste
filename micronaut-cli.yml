@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: foo
+testFramework: kotest
+sourceLanguage: kotlin
+buildTool: gradle_kotlin
+features: [annotation-api, app-name, gradle, http-client, kotest, kotlin, kotlin-application, kotlin-extension-functions, log4j2, management, netty-server, readme, shade, yaml]

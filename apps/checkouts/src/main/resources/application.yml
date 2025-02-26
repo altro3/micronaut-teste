@@ -1,0 +1,12 @@
+micronaut:
+  application:
+    name: checkouts
+#  openapi:
+#    config:
+#      file: apps/checkouts/openapi.properties
+#    expand:
+#      api:
+#        title: checkouts-v1
+#        version: 1.0.0
+#      openapi:
+#        description: checkouts v1

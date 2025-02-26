@@ -1,0 +1,12 @@
+micronaut:
+  application:
+    name: items
+#  openapi:
+#    config:
+#      file: apps/items/openapi.properties
+#    expand:
+#      api:
+#        title: items-v1
+#        version: 1.0.0
+#      openapi:
+#        description: items v1

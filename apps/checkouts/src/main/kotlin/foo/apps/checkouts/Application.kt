@@ -1,9 +1,8 @@
 package foo.apps.checkouts
 
-import foo.libs.common.OpenApiSpec
 import io.micronaut.runtime.Micronaut
 
-@OpenApiSpec
+@OtherSpec
 object Application {
   fun main(args: Array<String>) {
     Micronaut.build()

@@ -155,6 +155,7 @@ subprojects {
         runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
         runtimeOnly("org.apache.logging.log4j:log4j-core:${log4jVersion}")
         runtimeOnly("org.apache.logging.log4j:log4j-slf4j2-impl:$log4jVersion")
+        runtimeOnly("org.yaml:snakeyaml")
 
         // Avro
         implementation("org.apache.avro:avro:${avroVersion}")

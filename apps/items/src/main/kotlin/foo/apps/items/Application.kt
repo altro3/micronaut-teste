@@ -1,16 +1,9 @@
 package foo.apps.items
 
+import foo.libs.common.OpenApiSpec
 import io.micronaut.runtime.Micronaut
-import io.swagger.v3.oas.annotations.OpenAPIDefinition
-import io.swagger.v3.oas.annotations.info.Info
 
-@OpenAPIDefinition(
-  info =
-    Info(
-      title = "\${api.title}",
-      version = "\${api.version}",
-      description = "\${openapi.description}"),
-)
+@OpenApiSpec
 object Application {
   fun main(args: Array<String>) {
     Micronaut.build()

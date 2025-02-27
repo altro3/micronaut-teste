@@ -175,10 +175,19 @@ subprojects {
         testRuntimeOnly("org.apache.logging.log4j:log4j-slf4j-impl:${log4jVersion}")
 
         kaptTest("io.micronaut:micronaut-inject-java")
+
+        if (subproject.path.startsWith(":apps:")) {
+            implementation(project(":libs:common"))
+        }
+
     }
 
     kapt {
         correctErrorTypes = true
+
+        arguments {
+            arg("micronaut.openapi.config.file", "apps/${subproject.name}/openapi.properties")
+        }
     }
 
     configurations.all {

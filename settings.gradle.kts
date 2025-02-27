@@ -1,6 +1,7 @@
 rootProject.name = "foo"
 
 include(
+    ":libs:common",
     ":apps:items",
     ":apps:checkouts",
 )

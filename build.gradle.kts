@@ -187,8 +187,12 @@ subprojects {
 
         arguments {
             arg("micronaut.openapi.config.file", "apps/${subproject.name}/openapi.properties")
+            arg("micronaut.openapi.groups.all.packages", "foo.*")
+            arg("micronaut.openapi.views.spec", "swagger-ui.enabled=true, swagger-ui.theme=flattop, mapping.path=/swagger, redoc.enabled=true, rapidoc.enabled=true, rapidoc.bg-color=#14191f, rapidoc.text-color=#aec2e0, rapidoc.sort-endpoints-by=method")
+            arg("micronaut.openapi.property.naming.strategy", "SNAKE_CASE")
         }
     }
+
 
     configurations.all {
         exclude(group = "ch.qos.logback")
